@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>staticDiv</title>
+    <style>
+      .clr{
+        clear: both;
+      }
+      .container{
+        display: flex;
+
+      }
+      .container div{
+        border: 1px #ccc solid;
+        padding: 10px;
+      }
+      .one{
+        flex: 1;
+        color: #fff;
+        background-color: #000;
+
+
+      }
+      .two{
+        float:left;
+        width: 70%;
+        border: 1px solid #ccc;
+        padding: 10px;
+        box-sizing: border-box;
+        color: #fff;
+        background-color: red;
+      }
+      .twoa{
+        float:right;
+        width: 30%;
+        border: 1px solid #ccc;
+        padding: 10px;
+        box-sizing: border-box;
+        color: #fff;
+        background-color: red;
+      }
+     .three{
+        float:left;
+        width: 50%;
+        border: 1px solid #ccc;
+        padding: 10px;
+        box-sizing: border-box;
+        color: #fff;
+        background-color: green;
+      }
+      .four{
+
+        grid-row: 2;
+        border: 1px solid #ccc;
+        padding: 10px;
+        box-sizing: border-box;
+        color: #fff;
+        background-color: blue;
+      }
+      .five{
+        width: 100%;
+        border: 1px solid #ccc;
+        padding: 10px;
+        box-sizing: border-box;
+        color: #fff;
+        background-color: gray;
+
+      }
+      .grip{
+        display: grid;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="one">
+        one one one one one one one one one one one one one one one one one one one one one one one one one one one one
+      </div>
+      <div class="one">
+        one
+      </div>
+      <div class="one">
+        one
+      </div>
+      <div class="one">
+        one
+      </div>
+      <div class="one">
+        one
+      </div>
+    </div><!--/container-->
+      <div class="clr"></div>
+      <div class="two">
+        two two two two two two two two two two two two two two two two two two two two two two two two two two two two two two two two two two two two two two two two two two two two two two two two
+      </div>
+      <div class="twoa">
+        two
+      </div>
+      <div class="clr"></div>
+
+      <div class="grid">
+        <div class="three">
+          three
+        </div>
+        <div class="four">
+          four
+        </div>
+        <div class="three">
+          three
+        </div>
+      </div><!--/container-->
+
+      <div class="clr"></div>
+
+
+      <div class="five">
+        five
+      </div>
+
+  </body>
+</html>
