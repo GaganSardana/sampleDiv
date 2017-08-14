@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>staticDiv</title>
+    <style>
+      .container{
+          display: grid;
+          grid-gap: 0.2em;
+      }
+      .container1{
+        display: grid;
+        grid-template-columns: repeat(5,1fr);
+        grid-auto-rows: minmax(141px,auto);
+        }
+      .container2{
+        display: grid;
+        grid-auto-rows: minmax(142px,auto);
+        grid-template-columns: 70% 30% ;
+      }
+      .container3{
+        display: grid;
+        grid-auto-rows: minmax(142px,auto);
+        grid-template-columns:50% 50% ;
+      }
+      .container5{
+        display: grid;
+        grid-auto-rows: minmax(142px,auto);
+        grid-template-columns:100%;
+      }
+      .one{
+        border: 1px solid #ccc;
+        padding: 10px;
+        color: #fff;
+        background-color: #000;
+      }
+
+      .two{
+        border: 1px solid #ccc;
+        padding: 10px;
+        color: #fff;
+        background-color: red;
+      }
+
+      .three{
+        border: 1px solid #ccc;
+        padding: 10px;
+        color: #fff;
+        background-color: green;
+      }
+      .four{
+        grid-column: 2;
+        grid-row: 1/3;
+        border: 1px solid #ccc;
+        padding: 10px;
+        color: #fff;
+        background-color: blue;
+      }
+      .five{
+        border: 1px solid #ccc;
+        padding: 10px;
+        color: #fff;
+        background-color: gray;
+      }
+      @media screen and (min-width:500px) {
+        
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="container1">
+        <div class="one">
+          one one one one one one one one one one one one one one one one one one one one one one one one one one one one
+        </div>
+        <div class="one">
+          one
+        </div>
+        <div class="one">
+          one
+        </div>
+        <div class="one">
+          one
+        </div>
+        <div class="one">
+          one
+        </div>
+      </div>
+      <div class="container2">
+        <div class="two">
+          two two two two two two two two two two two two two two two two two two two two two two two two two two two two two two two two two two two two two two two two two two two two two two two two
+        </div>
+        <div class="two">
+          two
+        </div>
+      </div>
+      <div class="container3">
+        <div class="three">
+          three
+        </div>
+        <div class="four">
+          four
+        </div>
+        <div class="three">
+          three
+        </div>
+      </div>
+
+      <div class="container5">
+        <div class="five">
+          five
+        </div>
+      </div>
+    </div><!--/container-->
+  </body>
+</html>
